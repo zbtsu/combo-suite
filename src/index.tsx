@@ -1,10 +1,5 @@
-import * as React from 'react'
-import styles from './styles.module.css'
+import { useComboParser, comboParser } from './components/ComboParser'
+import ComboPreview from './components/ComboPreview'
+import IconProvider from './components/IconContext'
 
-interface Props {
-  text: string
-}
-
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export { useComboParser, comboParser, IconProvider, ComboPreview }
